@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora - IMC</title>
-</head>
-<body>
+    <meta name="description" content="Calculadora de IMC online gratuita. Calcule seu Índice de Massa Corporal de forma rápida e fácil com nossa ferramenta responsiva.">
+    <meta name="keywords" content="calculadora IMC, índice de massa corporal, saúde, peso, altura, calculadora online">
+    <meta name="author" content="Lucas">
     
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://seusite.com/calculadora-imc">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seusite.com/calculadora-imc">
+    <meta property="og:title" content="Calculadora de IMC - Calcule seu Índice de Massa Corporal">
+    <meta property="og:description" content="Calcule seu Índice de Massa Corporal de forma rápida e fácil com nossa calculadora de IMC online.">
+    <meta property="og:image" content="https://seusite.com/imagem-calculadora-imc.jpg">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://seusite.com/calculadora-imc">
+    <meta property="twitter:title" content="Calculadora de IMC - Calcule seu Índice de Massa Corporal">
+    <meta property="twitter:description" content="Calcule seu Índice de Massa Corporal de forma rápida e fácil com nossa calculadora de IMC online.">
+    <meta property="twitter:image" content="https://seusite.com/imagem-calculadora-imc.jpg">
+    <title>Calculadora de IMC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center p-4">
+    <!-- Container principal -->
+    <div class="w-full max-w-md bg-gray-800 rounded-xl shadow-xl overflow-hidden">
+        <!-- Cabeçalho -->
+        <header class="bg-gray-700 p-6">
+            <h1 class="text-2xl md:text-3xl font-bold text-center text-white">Calculadora de IMC</h1>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main class="p-6">
+            <!-- Instruções -->
+            <div class="mb-6 text-center">
+                <p class="text-gray-300">Digite seu peso e altura para calcular o IMC</p>
+            </div>
+
+            <!-- Formulário -->
+            <div class="space-y-4">
+                <!-- Campo de peso -->
+                <div>
+                    <label for="weight" class="block text-sm font-medium text-gray-300 mb-1">Peso (kg)</label>
+                    <input 
+                        type="number" 
+                        id="weight" 
+                        placeholder="Ex: 70" 
+                        class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                    >
+                </div>
+
+                <!-- Campo de altura -->
+                <div>
+                    <label for="height" class="block text-sm font-medium text-gray-300 mb-1">Altura (m)</label>
+                    <input 
+                        type="number" 
+                        id="height" 
+                        placeholder="Ex: 1.75" 
+                        step="0.01" 
+                        class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                    >
+                </div>
+
+                <!-- Botão de calcular -->
+                <div class="pt-2">
+                    <button 
+                        type="button" 
+                        id="calculate" 
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
+                    >
+                        Calcular
+                    </button>
+                </div>
+            </div>
+
+            <!-- Área de resultado (vazia, será preenchida pelo JavaScript) -->
+            <div class="mt-8 p-5 bg-gray-700 rounded-lg hidden" id="result-area">
+                <div class="text-center">
+                    <h2 class="text-xl font-semibold mb-2">Seu IMC é:</h2>
+                    <div class="text-3xl font-bold text-blue-400" id="imc-value">--</div>
+                    <p class="mt-2 text-gray-300" id="imc-classification">Classificação</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Rodapé com informações adicionais -->
+        <footer class="bg-gray-700 p-4 text-center text-sm text-gray-400">
+            <p>IMC = Peso (kg) / Altura² (m)</p>
+        </footer>
+    </div>
 </body>
 </html>
