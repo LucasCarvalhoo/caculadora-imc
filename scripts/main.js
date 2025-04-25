@@ -8,7 +8,6 @@ let calculateIMC = () => {
     const resultIMC = document.getElementById('imc-value')
     let resultArea = document.getElementById('result-area');
     resultArea.style.display = 'block';
-    resultArea.style.transition
     return resultIMC.innerText = result
 }
 
