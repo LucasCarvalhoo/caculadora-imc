@@ -3,9 +3,11 @@ let calculateIMC = () => {
     let height = Number(document.getElementById('height').value)
 
     heightSquared = Math.pow(height, 2);
-    result = weight / heightSquared;
+    result = (weight / heightSquared).toFixed(2);
 
-    console.log(result)
+    let resultIMC = document.getElementById('imc-value')
+    let resultArea = document.getElementById('result-area').style.display = 'block';
+    return resultIMC.innerText = result
 }
 
 let calculate = document.getElementById('calculate')

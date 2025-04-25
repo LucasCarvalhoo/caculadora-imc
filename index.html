@@ -27,36 +27,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-900 text-gray-100 min-h-screen flex items-center justify-center p-4">
-    <!-- Container principal - Aumentado para acomodar o layout de duas colunas -->
     <div class="w-full max-w-4xl bg-gray-800 rounded-xl shadow-xl overflow-hidden">
-        <!-- Cabeçalho -->
         <header class="bg-gray-700 p-6">
             <h1 class="text-2xl md:text-3xl font-bold text-center text-white">Calculadora de IMC</h1>
         </header>
 
-        <!-- Conteúdo principal - Layout flexível para desktop -->
         <div class="flex flex-col lg:flex-row">
-            <!-- Coluna da calculadora -->
             <main class="p-6 lg:w-1/2">
-                <!-- Instruções -->
                 <div class="mb-6 text-center">
                     <p class="text-gray-300">Digite seu peso e altura para calcular o IMC</p>
                 </div>
 
-                <!-- Formulário -->
                 <div class="space-y-4">
-                    <!-- Campo de peso -->
                     <div>
                         <label for="weight" class="block text-sm font-medium text-gray-300 mb-1">Peso (kg)</label>
                         <input 
                             type="number" 
                             id="weight" 
                             placeholder="Ex: 70" 
-                            class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
-                        >
+                            class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
                     </div>
 
-                    <!-- Campo de altura -->
                     <div>
                         <label for="height" class="block text-sm font-medium text-gray-300 mb-1">Altura (m)</label>
                         <input 
@@ -64,23 +55,19 @@
                             id="height" 
                             placeholder="Ex: 1.75" 
                             step="0.01" 
-                            class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
-                        >
+                            class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
                     </div>
 
-                    <!-- Botão de calcular -->
                     <div class="pt-2">
                         <button 
                             type="button" 
                             id="calculate" 
-                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 transform hover:scale-[1.02] active:scale-[0.98]"
-                        >
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-300 transform hover:scale-[1.02] active:scale-[0.98]">
                             Calcular
                         </button>
                     </div>
                 </div>
 
-                <!-- Área de resultado (vazia, será preenchida pelo JavaScript) -->
                 <div class="mt-8 p-5 bg-gray-700 rounded-lg hidden" id="result-area">
                     <div class="text-center">
                         <h2 class="text-xl font-semibold mb-2">Seu IMC é:</h2>
@@ -90,13 +77,11 @@
                 </div>
             </main>
 
-            <!-- Coluna da tabela de classificações -->
             <aside class="p-6 lg:w-1/2 bg-gray-750 lg:bg-transparent">
                 <div class="mb-4 text-center">
                     <h2 class="text-xl font-semibold text-white">Classificação do IMC</h2>
                 </div>
                 
-                <!-- Tabela de classificações -->
                 <div class="overflow-hidden rounded-lg border border-gray-600">
                     <table class="min-w-full divide-y divide-gray-600">
                         <thead class="bg-gray-700">
@@ -162,14 +147,12 @@
                     </table>
                 </div>
                 
-                <!-- Informação adicional -->
                 <div class="mt-4 text-sm text-gray-400 text-center">
                     <p>Fonte: Organização Mundial da Saúde (OMS)</p>
                 </div>
             </aside>
         </div>
 
-        <!-- Rodapé com informações adicionais -->
         <footer class="bg-gray-700 p-4 text-center text-sm text-gray-400">
             <p>IMC = Peso (kg) / Altura² (m)</p>
         </footer>
