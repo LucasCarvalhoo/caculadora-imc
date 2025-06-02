@@ -33,7 +33,7 @@ Esta calculadora permite aos usuários:
 ## 💻 Como Usar
 
 ### Online
-Acesse a calculadora diretamente pelo GitHub Pages: [Calculadora de IMC](https://lucascarvalhoo.github.io/calculadora-imc/)
+Acesse a calculadora diretamente pelo GitHub Pages: [Calculadora de IMC](https://lucascarvalhoo.github.io/caculadora-imc/)
 
 ### Localmente
 1. Clone este repositório:
