@@ -106,4 +106,4 @@ Orientador: Luan Oliveira
 
 ---
 
-Projeto desenvolvido como parte do programa Geração Tech do IEL 2023-2024.
+Projeto desenvolvido como parte do programa Geração Tech do IEL 2025.
