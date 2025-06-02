@@ -102,6 +102,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Desenvolvido por [Lucas Carvalho](https://github.com/LucasCarvalhoo).
 
+Orientador: Luan Oliveira
+
 ---
 
 Projeto desenvolvido como parte do programa Geração Tech do IEL 2023-2024.
